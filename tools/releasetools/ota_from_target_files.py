@@ -839,6 +839,25 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   progress_dict = {partition: 0.1 for partition in block_diff_dict}
   progress_dict["system"] = system_progress
 
+  script.Print("=====================================================");
+  script.Print(" _      ______ _____ _____ ____  _   _  ____   ____ _");
+  script.Print("| |    |  ____/ ____|_   _/ __ \| \ | |/ __ \ / ____|");
+  script.Print("| |    | |__ | |  __  | || |  | |  \| | |  | | (___  ");
+  script.Print("| |    |  __|| | |_ | | || |  | | . ` | |  | |\___ \ ");
+  script.Print("| |____| |___| |__| |_| || |__| | |\  | |__| |____) |");
+  script.Print("|______|______\_____|_____\____/|_| \_|\____/|_____/ ");
+  script.Print("						                                         ");
+  script.Print("                    By RAJ KALE                      ");
+  script.Print("          Thanks For Flashing LEGIONOS R             ");
+  script.Print("                                                     ");
+  script.Print("=====================================================");
+  script.Print(" Android version: %s"%(android_version));
+  script.Print(" Build id: %s"%(build_id));
+  script.Print(" Build date: %s"%(build_date));
+  script.Print(" Security patch: %s"%(security_patch));
+  script.Print(" Device: %s"%(device));
+  script.Print("=====================================================");
+
   if target_info.get('use_dynamic_partitions') == "true":
     # Use empty source_info_dict to indicate that all partitions / groups must
     # be re-added.
