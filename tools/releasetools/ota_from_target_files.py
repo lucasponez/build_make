@@ -839,17 +839,18 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # the update of the system partition takes the remaining progress.
   system_progress = 0.9 - (len(block_diff_dict) - 1) * 0.1
 
-  script.Print("**************************************");
-  script.Print("**  				    **");
-  script.Print("**  				    **");
-  script.Print("**  	      LEGIONOS		    **");
-  script.Print("**  				    **");
-  script.Print("**  				    **");
-  script.Print("**                                  **");
-  script.Print("**************************************");
-  script.Print("**  by Dr. Raj Kale (*TeamLegion)   **");
-  script.Print("**         Android R                **");
-  script.Print("**************************************");
+  script.Print("********************************************");
+  script.Print("                                  	    ");
+  script.Print("  _               _              ___  ____  ");
+  script.Print(" | |    ___  __ _(_) ___  _ __  / _ \/ ___| ");
+  script.Print(" | |   / _ \/ _` | |/ _ \| '_ \| | | \___ \ ");
+  script.Print(" | |__|  __/ (_| | | (_) | | | | |_| |___) |");
+  script.Print(" |_____\___|\__, |_|\___/|_| |_|\___/|____/ ");
+  script.Print("            |___/                           ");
+  script.Print("********************************************");
+  script.Print("  	    By Dr. Raj Kale   	    	    ");
+  script.Print("             Android R                	    ");
+  script.Print("********************************************");
 
   legionversion = target_info.GetBuildProp("ro.legion.display.version")
   androidver = target_info.GetBuildProp("ro.build.version.release")
